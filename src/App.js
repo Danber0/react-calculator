@@ -17,6 +17,15 @@ function App() {
   };
 
   const handleClickResult = () => {
+    if (result) {
+      alert('Введите Пример!');
+      return;
+    }
+    if (result.includes('/0')) {
+      alert('На 0 нельзя делить!');
+      setResult('');
+      return;
+    }
     setResult(eval(result).toString());
   };
 
