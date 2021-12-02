@@ -17,7 +17,7 @@ function App() {
   };
 
   const handleClickResult = () => {
-    if (result) {
+    if (result.length < 3) {
       alert('Введите Пример!');
       return;
     }
